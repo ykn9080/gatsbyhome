@@ -16,7 +16,6 @@ const TagsList = props => {
     <div>
       <div>
         {interests.map((tag, index) => {
-          const [text, value] = tag
           const slug = slugify(tag.title, { lower: true })
 
           return (
