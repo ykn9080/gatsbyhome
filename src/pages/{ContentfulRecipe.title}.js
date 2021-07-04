@@ -13,7 +13,7 @@ const RecipeTemplate = ({ data }) => {
     content,
     prepTime,
     servings,
-    description: { description },
+    description,
     image,
   } = data.contentfulRecipe
   const pathToImage = getImage(image)
@@ -122,9 +122,7 @@ export const query = graphql`
         tags
         tools
       }
-      description {
-        description
-      }
+      description
       prepTime
       servings
       image {

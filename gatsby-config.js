@@ -35,9 +35,28 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `1sfeg2xcbtuz`,
+        spaceId: `ro638qvvzbwj`,
+        //spaceId: `1sfeg2xcbtuz`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+        //accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+        accessToken: `CUni2uDaj1f3siz91npWlaWdpSTuBAejiZn5VGKIt28`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+            },
+          },
+        ],
       },
     },
     {
@@ -57,6 +76,21 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: "gatsby-source-strapi",
+    //   options: {
+    //     apiURL: "http://imcmaster.iptime.org:1337",
+    //     collectionTypes: [
+    //       // List of the Content Types you want to be able to request from Gatsby.
+    //       "recipe",
+    //     ],
+    //     // loginData: {
+    //     //   identifier: "yknam",
+    //     //   password: "ykn9080",
+    //     // },
+    //     queryLimit: 1000,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
   ],
 }
