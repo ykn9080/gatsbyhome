@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import slugify from "slugify"
-const RecipesList = ({ recipes = [] }) => {
+const InterestList = ({ interests = [] }) => {
   return (
     <div className="recipes-list">
-      {recipes.map(recipe => {
-        const { id, title, image, prepTime, cooktime } = recipe
+      {interests.map(interest => {
+        const { id, title, image } = interest
         const pathToImage = getImage(image)
         const slug = slugify(title, { lower: true })
         return (
@@ -17,9 +17,6 @@ const RecipesList = ({ recipes = [] }) => {
               alt={title}
             />
             <h5>{title}</h5>
-            <p>
-              Prep : {prepTime}min | Cook : {cooktime}min
-            </p>
           </Link>
         )
       })}
@@ -27,4 +24,4 @@ const RecipesList = ({ recipes = [] }) => {
   )
 }
 
-export default RecipesList
+export default InterestList

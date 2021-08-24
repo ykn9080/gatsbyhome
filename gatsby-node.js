@@ -1,5 +1,20 @@
 const path = require("path")
 const slugify = require("slugify")
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, "src/components"),
+        assets: path.resolve(__dirname, "src/assets"),
+        pages: path.resolve(__dirname, "src/pages"),
+        examples: path.resolve(__dirname, "src/examples"),
+        utils: path.resolve(__dirname, "src/utils"),
+      },
+    },
+  })
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 

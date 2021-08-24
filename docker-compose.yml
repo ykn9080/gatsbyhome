@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  web:
+    container_name: imcgatsby
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
+      - "9929:9929"
+      - "9230:9230"
+    volumes:
+      - /app/node_modules
+      - .:/app
+    environment:
+      - NODE_ENV=development
+      - GATSBY_WEBPACK_PUBLICPATH=/
+    deploy:
+      resources:
+        limits:
+          cpus: 0.50
+          memory: 1024M
+        reservations:
+          cpus: 0.25
+          memory: 512M

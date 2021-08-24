@@ -64,6 +64,21 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: "gatsby-source-strapi",
+    //   options: {
+    //     apiURL: "http://imcmaster.iptime.org:1337",
+    //     collectionTypes: [
+    //       // List of the Content Types you want to be able to request from Gatsby.
+    //       "recipe",
+    //     ],
+    //     // loginData: {
+    //     //   identifier: "yknam",
+    //     //   password: "ykn9080",
+    //     // },
+    //     queryLimit: 1000,
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
   ],
 }
