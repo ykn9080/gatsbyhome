@@ -34,10 +34,17 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-contentful`,
+      // options: {
+      //   spaceId: `1sfeg2xcbtuz`,
+      //   // Learn about environment variables: https://gatsby.dev/env-vars
+      //   accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+      // },
       options: {
-        spaceId: `1sfeg2xcbtuz`,
+        spaceId: `ro638qvvzbwj`,
+        //spaceId: `1sfeg2xcbtuz`,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+        //accessToken: `1nbHjd66EXSx6nNgEdRPZzTYUbDlk_oQl9OsjlkeiWA`,
+        accessToken: `CUni2uDaj1f3siz91npWlaWdpSTuBAejiZn5VGKIt28`,
       },
     },
     {
