@@ -12,10 +12,6 @@ const RecipeTemplate = ({ data }) => {
     cookTime,
     content,
     prepTime,
-<<<<<<< HEAD
-=======
-    servings,
->>>>>>> 3b43bed3bb0ab46a2a40d448eeb912b111fc41f8
     description,
     image,
   } = data.contentfulRecipe
