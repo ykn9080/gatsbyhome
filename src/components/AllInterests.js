@@ -47,8 +47,7 @@ const AllInterest = () => {
   const recipes = data.allContentfulRecipe.nodes
   const interests = data.allContentfulInterest.nodes
   return (
-    <section className="recipes-container">
-      <TagInterest recipes={interests} />
+    <section>
       {/* <RecipesList recipes={recipes} /> */}
       <ContentList lists={interests} />
     </section>

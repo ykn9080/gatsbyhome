@@ -10,14 +10,11 @@ const Works = () => {
       <main className="page">
         <section className="work-page">
           <article>
-            <h2>I'm baby coloring book poke taxidermy</h2>
+            <h2>Project Output Collection</h2>
             <p>
-              Taxidermy forage glossier letterpress heirloom before they sold
-              out you probably haven't heard of them banh mi biodiesel chia.
-            </p>
-            <p>
-              Taiyaki tumblr flexitarian jean shorts brunch, aesthetic salvia
-              retro.
+              프로젝트 산출물을 isolate해서 모듈화한 것. npm module화하여 npm
+              install할 수 있도록 만들거나 dockerize하여 docker-compose로
+              사용할수 있도록 하였음.
             </p>
           </article>
         </section>

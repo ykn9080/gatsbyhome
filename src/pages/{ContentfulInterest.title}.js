@@ -60,16 +60,9 @@ const InterestTemplate = ({ data }) => {
 
         <main className="page">
           <div className="recipe-page">
-            <div style={{ marginBottom: 10 }}>
-              <TagInterest tagtitle={title} />
-            </div>
+            <TagInterest tagtitle={title} />
             <section className="recipe-hero">
-              <GatsbyImage
-                image={pathToImage}
-                alt={title}
-                className="about-img"
-              />
-              <article>
+              <div>
                 <h2>{title}</h2>
                 {path && (
                   <Button type="primary" onClick={handleClickOpen}>
@@ -77,7 +70,12 @@ const InterestTemplate = ({ data }) => {
                   </Button>
                 )}
                 <p>{description?.raw}</p>
-              </article>
+              </div>
+              <GatsbyImage
+                image={pathToImage}
+                alt={title}
+                className="about-img"
+              />
             </section>
           </div>
           <div>{code && <Code text={code?.code} />}</div>

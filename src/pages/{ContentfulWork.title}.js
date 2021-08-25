@@ -64,11 +64,6 @@ const WorkTemplate = ({ data }) => {
               <TagWork tagtitle={title} />
             </div>
             <section className="recipe-hero">
-              <GatsbyImage
-                image={pathToImage}
-                alt={title}
-                className="about-img"
-              />
               <article>
                 <h2>{title}</h2>
                 {path && (
@@ -76,8 +71,13 @@ const WorkTemplate = ({ data }) => {
                     Show Demo
                   </Button>
                 )}
-                <p>{description?.raw}</p>
+                <p>{description.description}</p>
               </article>
+              <GatsbyImage
+                image={pathToImage}
+                alt={title}
+                className="about-img"
+              />
             </section>
           </div>
           <div>{code && <Code text={code?.code} />}</div>

@@ -40,14 +40,14 @@ const Navbar = () => {
           >
             works
           </Link>
-          <Link
+          {/* <Link
             to="/recipes"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
           >
             recipes
-          </Link>
+          </Link> */}
           <Link
             to="/tags"
             className="nav-link"
