@@ -22,12 +22,11 @@ const Interests = () => {
               isolation기술로 아래와 같이 나열해 본다.
             </p>
           </article>
-          <div style={{ paddingTop: 100 }} className="zoom">
+          <div  className="zoom">
             <StaticImage
               src="../assets/images/My_Skills.png"
               alt="My interest area and skill set "
               className="about-img"
-              width={600}
               placeholder="blurred"
             />
           </div>

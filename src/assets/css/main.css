@@ -478,7 +478,7 @@ form > *:last-child {
 @media screen and (min-width: 992px) {
   .interest-page {
     grid-template-columns: 1fr 2fr;
-    align-items: center;
+    align-items: top;
   }
 }
 .zoom {
