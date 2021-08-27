@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import AllInterests from "../components/AllInterests"
+import { FaSearchPlus } from "react-icons/fa"
 import SEO from "../components/SEO"
 
 const Interests = () => {
@@ -22,13 +23,17 @@ const Interests = () => {
               isolation기술로 아래와 같이 나열해 본다.
             </p>
           </article>
-          <div  className="zoom">
+          <div className="zoom">
             <StaticImage
               src="../assets/images/My_Skills.png"
               alt="My interest area and skill set "
               className="about-img"
               placeholder="blurred"
             />
+            <div style={{ marginTop: 15, textAlign: "right" }}>
+              <FaSearchPlus />
+              <span style={{ marginLeft: 5 }}>mouse over to enlarge</span>
+            </div>
           </div>
         </section>
         <AllInterests />

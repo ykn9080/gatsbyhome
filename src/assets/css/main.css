@@ -477,28 +477,27 @@ form > *:last-child {
 }
 @media screen and (min-width: 992px) {
   .interest-page {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: top;
   }
 }
 .zoom {
   background-color: white(119, 124, 119);
-  transition: transform 0.2s; /* Animation */
-  width: 800px;
-  height: auto;
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--grey-300);
   margin: 0 auto;
+  padding: 10px;
+  transition: width 2s, height 2s, transform 2s;
   z-index: 999;
 }
 
 .zoom:hover {
   border-radius: var(--borderRadius);
   border: 1px solid var(--grey-300);
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: scale(
-    1.6
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  left: 20%;
 }
 /*#########*/
 /* Work */
